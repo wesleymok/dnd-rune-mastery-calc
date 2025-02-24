@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TitanStar Legends - Talent Calculator</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <main class="container" aria-label="Talent Calculator Interface">
+        <header class="header-title">
+            <p role="heading" aria-level="1">TitanStar Legends - Rune Mastery Loadout Talent Calculator 9000</p>
+        </header>
+        
+        <section class="calculator-content" aria-label="Talent Calculator">
+            <div class="paths-container">
+                <div class="talent-path" aria-labelledby="path1-title">
+                    <h2 class="path-title">TALENT PATH 1</h2>
+                    <div class="talents" data-path="1" aria-label="Talent Path 1 Selection">
+                        <button class="talent chevron" data-index="0" 
+                                aria-label="Chevron talent, first in path 1"></button>
+                        <button class="talent silverware" data-index="1" 
+                                aria-label="Silverware talent, second in path 1"></button>
+                        <button class="talent cake" data-index="2" 
+                                aria-label="Cake talent, third in path 1"></button>
+                        <button class="talent crown" data-index="3" 
+                                aria-label="Crown talent, fourth in path 1"></button>
+                    </div>
+                </div>
+                
+                <div class="talent-path" aria-labelledby="path2-title">
+                    <h2 class="path-title">TALENT PATH 2</h2>
+                    <div class="talents" data-path="2" aria-label="Talent Path 2 Selection">
+                        <button class="talent boat" data-index="0" 
+                                aria-label="Boat talent, first in path 2"></button>
+                        <button class="talent scuba" data-index="1" 
+                                aria-label="Scuba talent, second in path 2"></button>
+                        <button class="talent lightening" data-index="2" 
+                                aria-label="Lightning talent, third in path 2"></button>
+                        <button class="talent skull" data-index="3" 
+                                aria-label="Skull talent, fourth in path 2"></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="points-spent" aria-live="polite">
+                <h3>
+                    <span id="pointsSpent" aria-label="Points spent out of total">0/6</span>
+                    Points Spent
+                </h3>
+            </div>
+        </section>
+    </main>
+
+    <div class="sr-only" role="status" aria-live="polite" id="talent-announcer"></div>
+    
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
