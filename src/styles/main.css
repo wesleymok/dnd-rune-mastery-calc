@@ -213,7 +213,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  background: linear-gradient(to right, rgba(102, 102, 102, 0.3), rgba(74, 74, 74, 0.8));
+  background: linear-gradient(to right, rgba(70, 70, 70, 0.5), rgba(40, 40, 40, 0.9));
 }
 @media (max-width: 456px) {
   .talent:not(:first-child)::before {
